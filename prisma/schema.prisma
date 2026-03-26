@@ -14,7 +14,7 @@ datasource db {
 
 model Suggestion {
   suggestionId String @id @default(uuid()) @map("suggestion_id")
-  userEmail String @unique @map("user_email")
+  title String @unique
   suggestionMessage String @map("suggestion_message")
 
   @@map("suggestions")
